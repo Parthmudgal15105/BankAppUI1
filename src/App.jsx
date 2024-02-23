@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './style'
 
-import{ NavBar, Hero,  Stats, Buisness  ,Billing ,CardDeal ,testimonial ,Clients ,CTA ,Footer} from './Components';
+import{ NavBar, Hero,  Stats,Company,Billing ,CardDeal ,EndNote ,Clients ,CTA ,Footer} from './Components';
 
 const App = () => {
   return (
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          NavBar
+          <NavBar />
         </div>
       </div>
 
@@ -21,10 +21,10 @@ const App = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats />
-          <Buisness />
+          <Company />
           <Billing />
           <CardDeal />
-          <Testimonial />
+          <EndNote />
           <Clients />
           <CTA />
           <Footer />
